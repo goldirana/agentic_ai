@@ -1,0 +1,112 @@
+{
+    "messages": [
+      {
+        "content": "Who is the owner and what are the timings?",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "aab1dad4-a96a-493e-935d-f56569fef437"
+      },
+      {
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_o9NjePsao0ux6CvAAoK9sedX",
+              "function": {
+                "arguments": {
+                  "retiever_schema": {
+                    "query": "Owner of Peak Performance Gym"
+                  }
+                },
+                "name": "retriever_tool_func"
+              },
+              "type": "function"
+            },
+            {
+              "id": "call_8FHpDP6cv1guXR9NKJyHa8eq",
+              "function": {
+                "arguments": {
+                  "retiever_schema": {
+                    "query": "Operating Hours of Peak Performance Gym"
+                  }
+                },
+                "name": "retriever_tool_func"
+              },
+              "type": "function"
+            }
+          ],
+          "refusal": null
+        },
+        "response_metadata": {
+          "token_usage": {
+            "completion_tokens": 69,
+            "prompt_tokens": 131,
+            "total_tokens": 200,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            }
+          },
+          "model_name": "gpt-3.5-turbo-0125",
+          "system_fingerprint": null,
+          "id": "chatcmpl-BSJkB0QOZJALt9EQUxmS4DtRdJ8OR",
+          "finish_reason": "tool_calls",
+          "logprobs": null
+        },
+        "id": "run-a409b8b9-0108-402f-aaa6-3a0f22d5fbda-0",
+        "tool_calls": [
+          {
+            "name": "retriever_tool_func",
+            "args": {
+              "retiever_schema": {
+                "query": "Owner of Peak Performance Gym"
+              }
+            },
+            "id": "call_o9NjePsao0ux6CvAAoK9sedX",
+            "type": "tool_call"
+          },
+          {
+            "name": "retriever_tool_func",
+            "args": {
+              "retiever_schema": {
+                "query": "Operating Hours of Peak Performance Gym"
+              }
+            },
+            "id": "call_8FHpDP6cv1guXR9NKJyHa8eq",
+            "type": "tool_call"
+          }
+        ],
+        "usage_metadata": {
+          "input_tokens": 131,
+          "output_tokens": 69,
+          "total_tokens": 200,
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          }
+        }
+      },
+      {
+        "content": "Peak Performance Gym was founded in 2015 by former Olympic athlete Marcus Chen. With over 15 years of experience in professional athletics, Marcus established the gym to provide personalized fitness solutions for people of all levels. The gym spans 10,000 square feet and features state-of-the-art equipment.",
+        "name": "retriever_tool_func",
+        "id": "4c6bb13d-ab9e-4cf7-9ba9-0a6a0eab347e",
+        "tool_call_id": "call_o9NjePsao0ux6CvAAoK9sedX"
+      },
+      {
+        "content": "Peak Performance Gym is open Monday through Friday from 5:00 AM to 11:00 PM. On weekends, our hours are 7:00 AM to 9:00 PM. We remain closed on major national holidays. Members with Premium access can enter using their key cards 24/7, including holidays.",
+        "name": "retriever_tool_func",
+        "id": "78f58c60-36f2-4d98-916a-65ef3ddba775",
+        "tool_call_id": "call_8FHpDP6cv1guXR9NKJyHa8eq"
+      },
+      {
+        "content": "The Peak Performance Gym was founded in 2015 by former Olympic athlete
